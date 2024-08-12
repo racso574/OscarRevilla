@@ -1,72 +1,105 @@
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header {
-    background-color: #444;
-    color: #fff;
-    padding: 20px 0;
+.container {
     text-align: center;
+    border: 5px solid #b3e6f7;
+    width: 70%;
+    height: 80%;
+    padding: 5%;
+    color: #b3e6f7;
+    box-sizing: border-box;
 }
 
-header h1 {
+h1 {
+    text-align: left;
+    font-size: 100px;
     margin: 0;
-    font-size: 2.5rem;
+    position: relative;
+    left: 50px;
+    top: 50px;
 }
 
-header p {
-    margin: 0.5rem 0 0;
-    font-size: 1.2rem;
+.description {
+    font-size: 30px;
+    position: relative;
+    text-align: left;
+    left: 150px;
+    top: 75px;
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin: 20px 0;
-}
-
-section h2 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #444;
-    padding-bottom: 5px;
-}
-
-section p,
-section ul,
-section li {
-    margin: 10px 0;
-    line-height: 1.6;
-}
-
-ul {
+.link-list {
+    font-size: 30px;
+    position: relative;
+    text-align: left;
+    left: 150px;
+    top: 100px;
     list-style-type: none;
     padding: 0;
 }
 
-li {
-    background-color: #f4f4f4;
-    margin: 5px 0;
-    padding: 10px;
-    border-left: 4px solid #444;
+.link-list li {
+    margin-bottom: 25px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #444;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.link-list a {
+    color: #b3e6f7;
+    text-decoration: none;
 }
+
+.link-list a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    font-size: 30px;
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+
+.links a {
+    color: #b3e6f7;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+.projects-list {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h2 {
+    font-size: 36px;
+    color: #b3e6f7;
+}
+
+.project p {
+    font-size: 20px;
+    color: #333;
+}
+
+.project a {
+    color: #b3e6f7;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+

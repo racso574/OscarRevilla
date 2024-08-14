@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Evitar scrolls si el contenido se escala demasiado */
+}
+
+.container {
+    text-align: center;
+    border: 0.5vw solid #b3e6f7; /* Usar vw para el borde */
+    width: 70vw; /* Escalar la anchura respecto a la vista */
+    height: 80vh; /* Escalar la altura respecto a la vista */
+    padding: 5%; /* Mantener padding relativo */
+    color: #b3e6f7;
+    box-sizing: border-box;
+    transform: scale(calc(100 / min(100vw / 1920, 100vh / 1080))); /* Escala todo el contenido según el tamaño de la pantalla */
+    transform-origin: top left; /* Establecer el origen del escalado */
+}
+
+h1 {
+    text-align: left;
+    font-size: 5vw; /* Escalar el tamaño de la fuente en relación a la anchura de la vista */
+    margin: 0;
+    position: relative;
+    left: 2vw;
+    top: 2vw;
+}
+
+.description, .link-list, .links {
+    font-size: 1.5vw; /* Escalar el tamaño de la fuente en relación a la anchura de la vista */
+    position: relative;
+    text-align: left;
+    left: 7.5vw;
+}
+
+.description {
+    top: 3vw;
+}
+
+.link-list {
+    top: 4vw;
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 1.5vw;
+}
+
+.link-list a, .links a {
+    color: #b3e6f7;
+    text-decoration: none;
+}
+
+.link-list a:hover, .links a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    left: 5vw;
+    top: 6vw;
+}
+
+.projects-list {
+    margin-top: 3vw;
+    text-align: left;
+}
+
+.project {
+    margin-bottom: 2vw;
+}
+
+.project h2 {
+    font-size: 2vw; /* Escalar el tamaño de la fuente en relación a la anchura de la vista */
+    color: #b3e6f7;
+}
+
+.project p {
+    font-size: 1.2vw; /* Escalar el tamaño de la fuente en relación a la anchura de la vista */
+    color: #333;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}

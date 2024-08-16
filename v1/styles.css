@@ -55,37 +55,60 @@ h1 {
 
 .link-list a, .links a {
     color: #b3e6f7;
-    text-decoration: none;
+    text-decoration: none; /* Sin subrayado por defecto */
+    border-bottom: none; /* Sin borde adicional */
+}
+
+.links a.active {
+    text-decoration: underline; /* Subrayado solo en el enlace activo */
+    text-decoration-color: #b3e6f7; /* Línea azul clarito */
 }
 
 .link-list a:hover, .links a:hover {
-    text-decoration: underline;
+    text-decoration: none; /* Ninguna línea al pasar el cursor */
 }
 
 .links {
-    left: 5vw;
+    left: 30vw;
     top: 6vw;
 }
 
-.projects-list {
-    margin-top: 3vw;
-    text-align: left;
+#projects-page .links {
+    top: 3vw; /* Ajusta este valor para mover los links hacia arriba */
 }
 
 .project {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 2vw;
+}
+
+.project img {
+    margin-right: 2vw;
+    width: auto;
+    height: auto;
+    max-width: 10vw;
+    max-height: 10vw;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left; /* Alinear texto a la izquierda */
 }
 
 .project h2 {
     font-size: 2vw; /* Escalar el tamaño de la fuente en relación a la anchura de la vista */
     color: #b3e6f7;
+    margin: 0;
+    padding: 0;
 }
 
 .project p {
     font-size: 1.2vw; /* Escalar el tamaño de la fuente en relación a la anchura de la vista */
     color: #333;
-}
-
-.project a:hover {
-    text-decoration: underline;
+    margin-top: 1vw;
+    margin-bottom: 0;
+    text-align: left; /* Asegurarse de que el texto del párrafo también esté alineado a la izquierda */
 }
